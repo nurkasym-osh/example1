@@ -60,7 +60,7 @@ def spseudoparabolic2(Nx, Ny, max_iter=10000, tol=1e-6):
                     u[j,i] = new_val
         
         if max_change < tol:
-            print(f"Сходимость достигнута на итерации {iter} с ошибкой {max_change:.2e}")
+            print(f"Convergence achieved at iteration {iter} with error {max_change:.2e}")
             break
             
         if iter % 100 == 0:
@@ -187,4 +187,5 @@ def main_example2():
     visualizeres(u, x, y)
 
 if __name__ == "__main__":
+
     main_example2()
